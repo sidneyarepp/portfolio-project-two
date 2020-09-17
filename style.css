@@ -1,0 +1,113 @@
+/* creating a general style for everything not specifically specified below */
+body {
+    margin: 0 auto;
+    width: 85%;
+    color: #ffffff;
+    background-color: rgb(221, 221, 221);
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+/* creating the CSS grid the elements will be set up in. */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+
+/* creating the styling for the header - since I have 9 columns I'm spanning all 9 so the header takes up it's own row */
+header {
+    color: #ffffff;
+    grid-column: span 9;
+    background-color: #5F506B;
+    font-size: 30px;
+}
+
+/* reducing the size of the image and styling it so it's circular. */
+.image > img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+/* setting the intro section background and setting it to span 3 columns in width */
+.intro {
+    background-color: #5e7780;
+    grid-column: span 3;
+    text-align: left;
+    padding: 5px;
+}
+
+/* aligning the h2 tags centered */
+.intro > h2, .about > h2 {
+    text-align: center;
+}
+
+/* setting the about section background and setting it to span 3 columns in width */
+.about {
+    background-color: #76949F;
+    grid-column: span 3;
+    text-align: left;
+    padding: 5px;
+}
+
+/* setting the contact section background and setting it to span 3 columns in width */
+.contact {
+    background-color: #86BBBD;
+    grid-column: span 3;
+}
+
+/* setting the unordered list so the li tags are all aligned on their left edge even if centered */
+ul, ol {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* aligning all of the li tags to align on their left edge */
+li {
+    text-align: left;
+}
+
+/* removing the margin and padding from all h1 and h2 tags */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* creating the hr that goes under the different section headings, reducing their size, and setting their color */
+hr { 
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #5F506B;
+    margin: 0 auto; 
+    padding: 0;
+    width: 40%;
+}
+
+/* styling all of the link colors for their various states */
+a:link {
+    color: #453a4e;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #77cefa;
+}
+
+a:active {
+    color: #49f9ff;
+}
+
+/* footer grid styling */
+footer {
+    display: grid;
+    background-color: #5F506B;
+    margin: 0;
+}
