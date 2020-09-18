@@ -112,3 +112,14 @@ footer {
     background-color: #5F506B;
     padding: 2rem;
 }
+
+@media all and (min-width: 1200px) {
+    .content-wrapper-large {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer {
+        background-color: rgb(19, 52, 88);
+    }
+}
