@@ -35,6 +35,7 @@ header {
 .intro {
     background-color: #5e7780;
     text-align: left;
+    padding: 2rem;
 }
 
 /* aligning the h2 tags centered */
@@ -42,15 +43,21 @@ header {
     text-align: center;
 }
 
+.intro > p {
+    margin: 0;
+}
+
 /* setting the about section background and setting it to span 3 columns in width */
 .about {
     background-color: #76949F;
     text-align: left;
+    padding: 2rem;
 }
 
 /* setting the contact section background and setting it to span 3 columns in width */
 .contact {
     background-color: #86BBBD;
+    padding: 2rem;
 }
 
 /* setting the unordered list so the li tags are all aligned on their left edge even if centered */
@@ -103,5 +110,5 @@ a:active {
 /* footer grid styling */
 footer {
     background-color: #5F506B;
-    margin: 0;
+    padding: 2rem;
 }
