@@ -10,15 +10,15 @@ body {
 
 /* creating the CSS grid the elements will be set up in. */
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(4, auto);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 /* creating the styling for the header - since I have 9 columns I'm spanning all 9 so the header takes up it's own row */
 header {
     color: #ffffff;
-    grid-column: span 9;
+    width: 100%;
     background-color: #5F506B;
     font-size: 30px;
 }
@@ -34,9 +34,7 @@ header {
 /* setting the intro section background and setting it to span 3 columns in width */
 .intro {
     background-color: #5e7780;
-    grid-column: span 3;
     text-align: left;
-    padding: 5px;
 }
 
 /* aligning the h2 tags centered */
@@ -47,15 +45,12 @@ header {
 /* setting the about section background and setting it to span 3 columns in width */
 .about {
     background-color: #76949F;
-    grid-column: span 3;
     text-align: left;
-    padding: 5px;
 }
 
 /* setting the contact section background and setting it to span 3 columns in width */
 .contact {
     background-color: #86BBBD;
-    grid-column: span 3;
 }
 
 /* setting the unordered list so the li tags are all aligned on their left edge even if centered */
@@ -107,7 +102,6 @@ a:active {
 
 /* footer grid styling */
 footer {
-    display: grid;
     background-color: #5F506B;
     margin: 0;
 }

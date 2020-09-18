@@ -10,7 +10,8 @@
 </head>
 <body>
     <!-- creating the css grid class using the wrapper -->
-    <main class="wrapper">
+    <div class="wrapper">
+    <main>
         <!-- top header including my headshot -->
         <header class="image">
             <img src="headshot.jpg" alt="sidney repp headshot">
@@ -18,13 +19,16 @@
         </header>
 
         <!-- introduction section -->
+        <div class="content">
         <article class="intro">
             <h2>Intro</h2>
             <hr>
             <p>Hello! My name is Sidney Repp and I am an aspiring fullstack web developer based out of Detroit, Michigan. Thank you for looking at my site, and if you'd like to contact me please reach out to me through <a href="mailto:sidneyarepp@outlook.com">email</a>, <a href="https://www.linkedin.com/in/sidneyrepp/">LinkedIn</a>, or <a href="https://github.com/sidneyarepp/">GitHub</a>.</p>
         </article>
+        </div>
 
         <!-- about me section -->
+        <div class="content">
         <article class="about">
             <h2>About</h2>
             <hr>
@@ -38,8 +42,10 @@
                 <li>Video Games</li>
             </ol>
         </article>
+        </div>
 
         <!-- contact section -->
+        <div class="content">
         <section class="contact">
             <h2>Contact</h2>
             <hr>
@@ -49,11 +55,13 @@
                 <li><a href="https://github.com/sidneyarepp/">GitHub</a></li>
             </ul>
         </section>
+        </div>
     </main>
     
     <!-- footer information -->
     <footer>
         <p>&#169;2020</p>
     </footer>
+    </div>
 </body>
 </html>
