@@ -11,23 +11,31 @@
 <body>
     <!-- creating the css grid class using the wrapper -->
     <div class="wrapper">
-    <main>
+        <main>
         <!-- top header including my headshot -->
         <div class="content-wrapper-large">
         <header class="image">
             <img src="headshot.jpg" alt="sidney repp headshot">
             <h1>SIDNEY REPP</h1>
+            <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            </nav>
         </header>
 
         <!-- introduction section -->
-        <article class="intro">
+        <article id="intro">
             <h2>Intro</h2>
             <hr>
             <p>Hello! My name is Sidney Repp and I am an aspiring fullstack web developer based out of Detroit, Michigan. Thank you for looking at my site, and if you'd like to contact me please reach out to me through <a href="mailto:sidneyarepp@outlook.com">email</a>, <a href="https://www.linkedin.com/in/sidneyrepp/">LinkedIn</a>, or <a href="https://github.com/sidneyarepp/">GitHub</a>.</p>
         </article>
 
         <!-- about me section -->
-        <article class="about">
+        <article id="about">
             <h2>About</h2>
             <hr>
             <p>I was born and raised in East Tennessee, but Detroit, Michigan is now my home.  Since graduating from East Tennessee State University in 2010 with a degree in Marketing I have worked for Robertson Marketing Group as an E-commerce manager.  I'm currently on the learning path to becoming a fullstack web developer.</p>
@@ -40,19 +48,30 @@
                 <li>Video Games</li>
             </ol>
         </article>
+        </main>
+    </div>
+    
+    <!-- contact section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <hr>
+        <ul>
+            <li><a href="mailto:sidneyarepp@outlook.com">Email</a></li>
+            <li><a href="https://www.linkedin.com/in/sidneyrepp/">LinkedIn</a></li>
+            <li><a href="https://github.com/sidneyarepp/">GitHub</a></li>
+        </ul>
+    </section>
 
-        <!-- contact section -->
-        <section class="contact">
-            <h2>Contact</h2>
-            <hr>
-            <ul>
-                <li><a href="mailto:sidneyarepp@outlook.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/sidneyrepp/">LinkedIn</a></li>
-                <li><a href="https://github.com/sidneyarepp/">GitHub</a></li>
-            </ul>
-        </section>
-        </div>
-    </main>
+    <!-- Contact Form -->
+    <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Please enter your first name.">
+        <label for="LasttName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name.">
+        <label for="message">Message</label>
+        <textarea type="textarea" id="message" name="message" placeholder="Please enter your message here."></textarea>
+        <input type="submit" value="Submit">
+    </form>
     
     <!-- footer information -->
     <footer>

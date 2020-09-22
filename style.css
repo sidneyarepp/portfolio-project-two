@@ -23,45 +23,56 @@ header {
     font-size: 30px;
 }
 
+/* Styling the header nav horizontal for smaller screens. */
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 15px;
+}
+
+
 /* reducing the size of the image and styling it so it's circular. */
 .image > img {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    margin: 10px;
+    margin: 5px;
 }
 
 /* setting the intro section background and setting it to span 3 columns in width */
-.intro {
+#intro {
     background-color: #5e7780;
     text-align: left;
     padding: 2rem;
 }
 
 /* aligning the h2 tags centered */
-.intro > h2, .about > h2 {
+#intro > h2, #about > h2 {
     text-align: center;
 }
 
-.intro > p {
-    margin: 0;
-}
-
 /* setting the about section background and setting it to span 3 columns in width */
-.about {
+#about {
     background-color: #76949F;
     text-align: left;
     padding: 2rem;
 }
 
 /* setting the contact section background and setting it to span 3 columns in width */
-.contact {
-    background-color: #86BBBD;
+#contact {
+    background-color: rgb(19, 52, 88);
     padding: 2rem;
 }
 
 /* setting the unordered list so the li tags are all aligned on their left edge even if centered */
-ul, ol {
+#about > ul, #about > ol, #contact > ul {
     display: inline-block;
     list-style-type: none;
     padding: 0;
@@ -92,11 +103,11 @@ hr {
 
 /* styling all of the link colors for their various states */
 a:link {
-    color: #453a4e;
+    color: #ffffff;
 }
 
 a:visited {
-    color: #ffffff;
+    color: #82bef7;
 }
 
 a:hover {
@@ -109,17 +120,72 @@ a:active {
 
 /* footer grid styling */
 footer {
-    background-color: #5F506B;
+    background-color:#45856f;
     padding: 2rem;
 }
 
+/* Creating the overall style for the contact form. */
+form {
+    background-color: rgb(206, 205, 205);
+    padding: 2rem;
+    text-align: left;
+}
+
+/* Styling the input fields in the contact form. */
+input[type="text"] {
+    width: 100%;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Styling the contact form. */
+textarea {
+    width: 100%;
+    height: 200px;
+    border: 2px solid darkgray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 3px;
+    resize: vertical;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Styling the submit button in the contact form. */
+input[type="submit"] {
+    background-color: #86BBBD;
+    color: white;
+    border-radius: 2px;
+    width: 15%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    border: 1px solid darkgray;
+}
+
+/* Setting the page layout for a desktop screen. */
 @media all and (min-width: 1200px) {
     .content-wrapper-large {
         display: flex;
         flex-direction: row;
     }
 
-    footer {
-        background-color: rgb(19, 52, 88);
+    /* Making the navigation horizontal on larger screens. */
+    nav > ul {
+        display: inline-block;
+        list-style-type: none;
+        padding: 0;
+        float: center;
+    }
+
+    nav > ul > li {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 0;
     }
 }
