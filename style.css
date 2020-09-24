@@ -80,11 +80,13 @@ nav > ul > li {
 
 /* setting the styling for the portfolio section */
 #portfolio {
-    display: flex;
-    flex-wrap: wrap;
     background-color: rgb(232, 142, 62);
     margin: 0;
-    padding: 0;
+    padding: 2rem;
+}
+
+#portfolio > h2 {
+    text-align: center;
 }
 
 .portfolio-item {
@@ -101,7 +103,7 @@ nav > ul > li {
 .side-by-side {
     display: flex;
     flex-wrap: wrap;
-    /* flex: 1; */
+    flex: 1;
     justify-content: center;
 }
 
@@ -197,8 +199,10 @@ input[type="submit"] {
 @media all and (min-width: 800px) {
     .side-by-side {
         display: flex;
-        flex-wrap: wrap;
-        flex: 1;
         justify-content: center;
+    }
+
+    .portfolio-item {
+        flex: 1;
     }
 }
