@@ -18,12 +18,11 @@ body {
 /* creating the styling for the header - since I have 9 columns I'm spanning all 9 so the header takes up it's own row */
 header {
     color: #ffffff;
-    width: 100%;
     background-color: #5F506B;
     font-size: 30px;
 }
 
-/* styling the header nav horizontal for smaller screens. */
+/* styling the header nav horizontal. */
 nav > ul {
     list-style-type: none;
     margin: 0;
@@ -96,12 +95,13 @@ nav > ul > li {
 
 .portfolio-item img {
     max-width: 100%;
+    height: auto;
 }
 
 .side-by-side {
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
+    /* flex: 1; */
     justify-content: center;
 }
 
@@ -194,24 +194,11 @@ input[type="submit"] {
 }
 
 /* setting the page layout for a desktop screen. */
-@media all and (min-width: 1200px) {
-    .content-wrapper-large {
+@media all and (min-width: 800px) {
+    .side-by-side {
         display: flex;
-        flex-direction: row;
-    }
-
-    /* making the navigation horizontal on larger screens. */
-    nav > ul {
-        display: inline-block;
-        list-style-type: none;
-        padding: 0;
-        float: center;
-    }
-
-    nav > ul > li {
-        display: block;
-        text-align: left;
-        margin: 0;
-        padding: 0;
+        flex-wrap: wrap;
+        flex: 1;
+        justify-content: center;
     }
 }
