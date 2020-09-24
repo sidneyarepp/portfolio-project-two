@@ -32,7 +32,7 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 5px;
 }
 
@@ -40,7 +40,7 @@ nav > ul > li {
 /* reducing the size of the image and styling it so it's circular. */
 .image > img {
     border-radius: 50%;
-    max-width: 275px;
+    max-width: 260px;
     margin: 5px;
 }
 
