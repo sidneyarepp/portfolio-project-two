@@ -99,6 +99,10 @@ nav > ul > li {
     height: auto;
 }
 
+.portfolio-item a {
+    padding: 5px;
+}
+
 .side-by-side {
     display: flex;
     flex-wrap: wrap;
